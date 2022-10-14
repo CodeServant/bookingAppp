@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>DUMMY DEMO</h1>
+<h2>put info to reservation</h2>
+<p>Screenings with id 0, 2, 4 are less than 15 minutes before screening time. The form in this HTML allows to reserve only 1 ticket at a time, but API aliows for more in one reseravtion.</p>
+<form action="/booking/reservation" method="POST">
+ <input type="text" name="name" id="name" value="Grażyna">
+ <label for="name">name</label><br>
+ 
+
+ <input type="text" name="surname" id="surname" value="Kowalska-Malinowska">
+ <label>surname</label><br>
+ 
+ <input type="number" name="screening" id="screening" value="1" min="0" max="6">
+ <label>screening id</label><br>
+ 
+ <input type="number" name="r" id=r value="0" min="0" max="9">
+ <label>row id</label><br>
+ 
+ <input type="number" name="p" id="p" value="0" min="0" max="9">
+ <label>place id</label><br>
+ 
+<!--  <input type="text" name="t" id="t" value="s"> -->
+ 
+ <label>ticket type</label><br>
+ <input type="radio" name="t" id="a" value="a">
+ <label for="a">adult</label>
+ <input type="radio" name="t" id="s" value="s">
+ <label for="s">student </label>
+ <input type="radio" name="t" id="c" value="c">
+ <label for="c">child</label>
+ <input type="submit" value="reserve">
+</form>
+<br>
+<p><a href="http://localhost:8080/booking/movies?from=2022-10-13%2010:30&to=2050-10-10%2010:30">show </a> all screenings between 2022-10-13 and 2050-10-10</p>
+<p><a href="http://localhost:8080/booking/screenings?id=5">show screening (id=5)</a> with already reserved places</p>
+</body>
+</html>
