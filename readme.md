@@ -11,7 +11,7 @@ start the tomcat server and go to the DEMO SITE http://localhost:8080/booking<br
 
 <h4>Installation script on manjaro</h4>
 cd ~<br>
-git clone https://github.com/CodeServant/bookingApp.git<br>
+git clone https://github.com/CodeServant/bookingAppp.git <br>
 cd bookingApp<br>
 mvn package<br>
 sudo cp ./target/booking.war /usr/share/tomcat9/webapps/<br>
